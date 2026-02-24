@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkedin-cli"
+version = "0.1.0"
+description = "A CLI for LinkedIn — auth, post, profile, and more. Agent-friendly with JSON output."
+requires-python = ">=3.10"
+dependencies = [
+    "typer[all]>=0.12",
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+linkedin = "linkedin_cli.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["linkedin_cli*"]

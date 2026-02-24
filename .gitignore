@@ -1,0 +1,8 @@
+.env
+linkedin_token.json
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+context/
